@@ -1,9 +1,10 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <>
+    <div>
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">User Management System</a>
@@ -12,9 +13,11 @@ function Navbar() {
     </button>
   </div>
 
-  <button className="btn btn-outline-light">Add User</button>
+  <NavLink className="btn btn-outline-light" to="/adduser">
+            Add User
+          </NavLink>
 </nav>
-    </>
+    </div>
   )
 }
 
